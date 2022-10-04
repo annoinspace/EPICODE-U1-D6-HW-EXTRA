@@ -13,7 +13,7 @@ Ingredients for 4 persons:
 To make classic carbonara, first cut the guanciale into 1cm layers, then into long strips.
 Combine the egg yolks with the finely grated Pecorino Romano.
 Roast the black pepper on a pan until it smokes and sizzles, and combine a small amount of it to the yolks and chees mixture, set aside the rest.
-Brown the strips of guanciale for 3 minutes at medium heat, then 1 minune on high heat til crisp, then turn off the heat, take out the guanciale, leaving only the grease on the pan cool down.
+Brown the strips of guanciale for 3 minutes at medium heat, then 1 minute on high heat til crisp, then turn off the heat, take out the guanciale, leaving only the grease on the pan cool down.
 Cook the pasta with a pinch of salt in the water (guanciale is already very salty);
 set aside a ladleful of the pasta water before draining it, then drain the pasta once it is cooked al dente.
 Pour 2 spoons of the reserved hot water into the part of the frying pan containing the cooled guanciale and turn on the heat:
@@ -23,3 +23,37 @@ Add the yolk and cheese mixture, stirring rapidly. In the warm pan with the hot 
 It is important to do this part quickly to prevent the yolks from congealing and taking on the texture of scrambled eggs.
 Add the remaining roasted black pepper and serve immediately.
 */
+
+let spaghetti = 400
+let guanciale = 250
+let freshEggYolks = 6
+let gratedPecorinoRomano = 50
+let blackPepper = 4
+
+// first cut the guanciale into 1cm layers, then into long strips
+let slicedGunaciale = (guanciale / 10) * 5
+console.log(`The sliced guanciale makes ` + slicedGunaciale + ` pieces`)
+
+//Combine the egg yolks with the finely grated Pecorino Romano.
+let eggYolkPecorinoMixture = freshEggYolks + gratedPecorinoRomano
+console.log(
+  `The fresh egg yolk and pecorino romano mixture weighs ` +
+    eggYolkPecorinoMixture +
+    ` grams`
+)
+
+/* Roast the black pepper on a pan until it smokes and sizzles, 
+and combine a small amount of it to the yolks and chees mixture, set aside the rest. */
+let seasonedEggYolkPecorinoMixture = blackPepper * 0.33 + eggYolkPecorinoMixture
+console.log(
+  `After adding the roasted black pepper: ` + seasonedEggYolkPecorinoMixture
+)
+
+//cook the guanciale and leave the fat in the pan
+let cookedGuanciale = guanciale * 0.6
+let greaseInPan = guanciale - cookedGuanciale
+console.log(
+  `After cooking the guanciale we are left with ` +
+    cookedGuanciale +
+    ` grams of meat`
+)
